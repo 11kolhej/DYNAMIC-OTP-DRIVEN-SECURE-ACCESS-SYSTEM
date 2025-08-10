@@ -1,5 +1,3 @@
-DYNAMIC-OTP-DRIVEN-SECURE-ACCESS-SYSTEM
-
 Secure access control using GSM-based dynamic OTP verification and real-time validation. This project implements a microcontroller-based time-limited authentication system where a password-protected interface sends a dynamically generated OTP via GSM, which must be entered within a limited timeframe to grant access. 🧠 Project Objective To design and develop an OTP-based time-restricted access control system using GSM technology with LPC2148 microcontroller, ensuring enhanced security for restricted access environments.
 
 🧩 System Overview flowchart TD A[User Enters Static Password] --> B{Is Password Correct?} B -- Yes --> C[Generate OTP via RTC] C --> D[Send OTP to Registered Mobile via GSM] D --> E[User Enters OTP] E --> F{Is OTP Correct & Timely?} F -- Yes --> G[Access Granted: Activate Motor/Door] F -- No --> H[Access Denied: Reset to Initial State] B -- No --> I[Access Denied: Retry]
